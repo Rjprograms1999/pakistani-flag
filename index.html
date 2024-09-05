@@ -5,18 +5,87 @@
     <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
     <title>Pakistani Flag</title>
     <style>
-     @media (min-width: 768px) and (max-width: 991.98px) { 
+      @media (max-width: 991.98px) {
+        .flag {
+          width: 600px;
+          height: 400px;
+        }
 
-      body {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-        
+        .flag > div {
+          width: 400px;
+          left: 200px;
+        }
+
+        .flag > div > div {
+          width: 200px;
+          height: 200px;
+          left: 100px;
+          top: 100px;
+        }
+
+        .flag div div .star {
+          border-left: 70px solid transparent;
+          border-right: 70px solid transparent;
+          border-bottom: 50px solid white;
+        }
+
+        .star::before {
+          top: -30px;
+          left: -45px;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 60px solid white;
+        }
+
+        .star::after {
+          top: 3px;
+          left: -70px;
+          border-left: 70px solid transparent;
+          border-right: 70px solid transparent;
+          border-bottom: 50px solid white;
+        }
       }
+
+      /* Mobile view */
+      @media (max-width: 767.98px) {
+        .flag {
+          width: 400px;
+          height: 300px;
+        }
+
+        .flag > div {
+          width: 300px;
+          left: 100px;
+        }
+
+        .flag > div > div {
+          width: 150px;
+          height: 150px;
+          left: 50px;
+          top: 75px;
+        }
+
+        .flag div div .star {
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 35px solid white;
+        }
+
+        .star::before {
+          top: -20px;
+          left: -30px;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 40px solid white;
+        }
+
+        .star::after {
+          top: 3px;
+          left: -50px;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 35px solid white;
+        }
       }
 
       body {
@@ -73,7 +142,6 @@
         border-right: 30px solid transparent;
         border-bottom: 80px solid white;
         transform: rotate(-35deg);
-  
       }
 
       .star::after {
@@ -92,11 +160,7 @@
   <body>
     <div class="flag">
       <div>
-        <div>
-          <div class="star" style="left: 30px;
-          bottom:30px"
-          </div>
-        </div>
+        <div><div class="star" style="left: 30px; bottom:30px"</div>
       </div>
     </div>
   </body>
