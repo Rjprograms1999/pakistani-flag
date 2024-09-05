@@ -6,86 +6,6 @@
     <title>Pakistani Flag</title>
     <style>
       @media (max-width: 991.98px) {
-        .flag {
-          width: 600px;
-          height: 400px;
-        }
-
-        .flag > div {
-          width: 400px;
-          left: 200px;
-        }
-
-        .flag > div > div {
-          width: 200px;
-          height: 200px;
-          left: 100px;
-          top: 100px;
-        }
-
-        .flag div div .star {
-          border-left: 70px solid transparent;
-          border-right: 70px solid transparent;
-          border-bottom: 50px solid white;
-        }
-
-        .star::before {
-          top: -30px;
-          left: -45px;
-          border-left: 20px solid transparent;
-          border-right: 20px solid transparent;
-          border-bottom: 60px solid white;
-        }
-
-        .star::after {
-          top: 3px;
-          left: -70px;
-          border-left: 70px solid transparent;
-          border-right: 70px solid transparent;
-          border-bottom: 50px solid white;
-        }
-      }
-
-      /* Mobile view */
-      @media (max-width: 767.98px) {
-        .flag {
-          width: 400px;
-          height: 300px;
-        }
-
-        .flag > div {
-          width: 300px;
-          left: 100px;
-        }
-
-        .flag > div > div {
-          width: 150px;
-          height: 150px;
-          left: 50px;
-          top: 75px;
-        }
-
-        .flag div div .star {
-          border-left: 50px solid transparent;
-          border-right: 50px solid transparent;
-          border-bottom: 35px solid white;
-        }
-
-        .star::before {
-          top: -20px;
-          left: -30px;
-          border-left: 15px solid transparent;
-          border-right: 15px solid transparent;
-          border-bottom: 40px solid white;
-        }
-
-        .star::after {
-          top: 3px;
-          left: -50px;
-          border-left: 50px solid transparent;
-          border-right: 50px solid transparent;
-          border-bottom: 35px solid white;
-        }
       }
 
       body {
@@ -98,8 +18,9 @@
       }
 
       .flag {
-        width: 850px;
-        height: 600px;
+        width: 100%;
+        max-width: 850px;
+        height: auto;
         background-color: white;
         position: relative;
       }
