@@ -71,17 +71,14 @@
         border-bottom: 70px solid white;
         transform: rotate(-70deg);
       }
+
       @media (max-width: 991.98px) {
-        body {
-          flex-basis: 50%;
-        }
         .flag {
-          width: 400px;
+          max-width: 30%;
           height: 300px;
         }
         .flag > div {
           width: 280px;
-
           left: 120px;
         }
         .flag > div > div {
@@ -116,7 +113,7 @@
   </head>
 
   <body>
-    <div class="flag">
+    <div class="flag container narrow">
       <div>
         <div><div class="star" style="left: 30px; bottom:30px"</div>
       </div>
